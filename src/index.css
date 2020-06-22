@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #eee;
+}
+
+ul {
+    padding: 0;
+}
+
+nav a.active {
+    border-bottom: 5px solid #333;
+    transition: all ease 0.5s;
+}
+
+.card-title {
+    display: inline-block;
+    margin: 0 10px;
+}
+ul li img {
+    max-height: 33%;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.home .post img {
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    opacity: 0.6;
+}
+
+.home .post {
+    overflow: hidden;
+    padding-left: 80px;
+}
