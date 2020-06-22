@@ -19,7 +19,7 @@ class PokemonContainer extends Component {
                             <div className='row'>
                                 <div className='card blue-grey darken-1 hoverable col s4 offset-s4'>
                                     <div className='card-content white-text center'>
-                                        <span className='card-title'>
+                                        <span className='card-title hoverable'>
                                             <span>#{this.props.urlConverter(pokemon.url)}</span>
                                             <span>
                                                 <Name name={pokemon.name} />
