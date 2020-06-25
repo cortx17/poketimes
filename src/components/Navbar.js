@@ -5,24 +5,24 @@ const Navbar = props => {
     return (
         <nav className='nav-wrapper red darken-3'>
             <div className='container'>
-                <BrowserRouter basename='/' />
-                <Link className='brand-logo' to='/'>
+                <BrowserRouter basename={process.env.PUBLIC_URL + '/'} />
+                <Link className='brand-logo' to={process.env.PUBLIC_URL + '/'}>
                     Poké' Times
                 </Link>
                 <ul className='right'>
                     <li>
-                        <NavLink exact to='/'>
+                        <NavLink exact to={process.env.PUBLIC_URL + '/'}>
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/search'>Search</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + '/search'}>Search</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about'>About</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/contact'>Contact</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + '/contact'}>Contact</NavLink>
                     </li>
                 </ul>
             </div>
