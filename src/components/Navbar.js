@@ -6,23 +6,23 @@ const Navbar = props => {
         <nav className='nav-wrapper red darken-3'>
             <div className='container'>
                 <BrowserRouter basename='/' />
-                <Link className='brand-logo' to={process.env.PUBLIC_URL + '/'}>
+                <Link className='brand-logo' to='/'>
                     Poké' Times
                 </Link>
                 <ul className='right'>
                     <li>
-                        <NavLink exact to={process.env.PUBLIC_URL + '/'}>
+                        <NavLink exact to='/'>
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={process.env.PUBLIC_URL + '/search'}>Search</NavLink>
+                        <NavLink to='/search'>Search</NavLink>
                     </li>
                     <li>
-                        <NavLink to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
+                        <NavLink to='/about'>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to={process.env.PUBLIC_URL + '/contact'}>Contact</NavLink>
+                        <NavLink to='/contact'>Contact</NavLink>
                     </li>
                 </ul>
             </div>

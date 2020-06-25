@@ -5,16 +5,17 @@
   "homepage": "https://cortx17.github.io/poketimes/",
   "dependencies": {
     "axios": "^0.18.1",
+    "express": "^4.17.1",
     "react": "^16.13.1",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.0.2",
-    "react-router-dom": "^5.0.0",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8",
-    "redux": "^4.0.1"
+    "redux": "^4.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "start": "node server/server.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

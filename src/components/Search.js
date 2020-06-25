@@ -6,7 +6,7 @@ import PokemonContainer from './PokemonContainer';
 class Search extends Component {
     state = {
         pokemons: [],
-        searchTerm: ''
+        searchTerm: 'a'
     };
 
     componentDidMount() {
