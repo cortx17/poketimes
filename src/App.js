@@ -17,7 +17,7 @@ class App extends Component {
                         <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
                         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
                         <Route path={process.env.PUBLIC_URL + '/search'} component={Search} />
-                        <Route path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
+                        <Route path='/contact' component={Contact} />
                         <Route path={process.env.PUBLIC_URL + '/:post_id'} component={Post} />
                     </Switch>
                 </div>
